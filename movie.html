@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIES</title>
+    <link rel="icon" type="image/x-icon" href="images/WB_Logo12.png">
+    <link rel="stylesheet" href="movie.css">
+    <link rel="stylesheet" href="lightslider.css">
+    
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <header> 
+        <h1>MOVIES</h1>
+    </header>
+    <nav>
+       
+        <a href="index.html" class="logo">
+            <img src="images/WB_Logo12.png"/>
+        </a>
+        
+        <input type="checkbox" class="menu-btn" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+       
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movie.html">Movies</a></li>
+            <li><a href="tvshows.html">TV_Shows</a></li>
+            <li><a href="gamesandapps.html">Games&Apps</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+     
+        <div class="search">
+            <input type="text" placeholder="Search by Title"/>
+            
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+    
+    
+    <div class="movies-heading">
+        <h2>Movies</h2>
+    </div>
+    <section id="movies-list">
+        
+        <div class="movies-box">
+           
+            <div class="movies-img">
+                
+                <img src="images/kfp4.png">
+            </div>
+            <a href="https://www.youtube.com/watch?v=_inKs4eeHiI">
+                KUNGFU PANDA 4
+            </a>
+        </div>
+         <div class="movies-box">
+            <div class="movies-img">  
+                <img src="images/Dune_Part_Two_poster.png">
+            </div>
+            <a href="https://www.youtube.com/watch?v=U2Qp5pL3ovA">
+                DUNE PART TWO
+            </a>
+        </div>
+         <div class="movies-box">
+            <div class="movies-img">
+                <img src="images/kotpota.png">
+            </div>
+            <a href="https://www.youtube.com/watch?v=XtFI7SNtVpY">
+                Kingdom of the Planet of the Apes
+            </a>
+        </div>
+         <div class="movies-box">
+            <div class="movies-img"> 
+                <img src="images/joker.png">
+            </div>
+            <a href="#">
+               JOKER The World is a Stage
+            </a>
+        </div>
+         <div class="movies-box">
+            <div class="movies-img">
+                <img src="images/aquaman.png">
+            </div>
+            <a href="https://www.youtube.com/watch?v=Wc_IyiUt7zA">
+                Aquaman and the Lost Kingdom 
+            </a>
+        </div>
+        
+         <div class="movies-box">
+            
+            <div class="movies-img">
+                
+                <img src="images/avengerendgame.png">
+            </div>
+           
+            <a href="https://www.youtube.com/watch?v=TcMBFSGVi1c">
+                AVENGERS ENDGAME
+            </a>
+        </div>
+        
+         <div class="movies-box">
+            
+            <div class="movies-img">
+                
+                <img src="images/badboys4.png">
+            </div>
+           
+            <a href="https://www.youtube.com/watch?v=hRFY_Fesa9Q">
+                Bad boys 4 | RIDE OR DIE
+            </a>
+        </div>
+         
+         <div class="movies-box">
+           
+            <div class="movies-img">
+                
+                <img src="images/black adam.png">
+            </div>
+            
+            <a href="https://www.youtube.com/watch?v=X0tOpBuYasI">
+               Black Adam 
+            </a>
+        </div>
+    </section>
+    
+    <script>
+        $(document).ready(function() {
+    $('#autoWidth,#autoWidth2').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
+        } 
+    });  
+  });
+    </script>
+
+    <div class="btns">
+        <a href="index.html">Movies</a>
+        <a href="tvshows.html">Tv SHOWS</a>
+    </div>
+    
+    <footer>
+        <p>TM & © 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+        <p>Copyright 2024. warner bros</p>
+    </footer>
+</body>
+</html>
